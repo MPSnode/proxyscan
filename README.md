@@ -1,19 +1,20 @@
-# Proxy Validator Script
+# Proxy Fetcher and Validator
 
-This script fetches proxy lists from various sources, validates them by making actual HTTP requests, and saves the valid proxies to a text file. It uses multithreading to speed up the validation process.
+This script fetches proxy lists from various sources, validates them, and separates them into different files based on their type (HTTP, SOCKS4, SOCKS5).
 
 ## Features
 
-- Fetches proxies from multiple sources.
+- Fetches proxy lists from multiple sources.
 - Validates proxies by making actual HTTP requests.
-- Uses multithreading for fast scanning.
-- Saves valid proxies to a text file.
+- Filters proxies into HTTP, SOCKS4, and SOCKS5 types.
+- Saves valid proxies into separate files.
 
 ## Requirements
 
-- Python 3.x
+- Python 3.10 or higher
 - `requests` library
 - `beautifulsoup4` library
+- `pysocks` library
 
 ## Installation
 
